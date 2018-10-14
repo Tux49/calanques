@@ -142,7 +142,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <navigationItem key="navigationItem" id="9CF-sz-8Cx"/>
+                    <navigationItem key="navigationItem" id="9CF-sz-8Cx">
+                        <barButtonItem key="rightBarButtonItem" title="Reload" id="0Xh-tL-MaW">
+                            <connections>
+                                <action selector="reloadAction:" destination="9pv-A4-QxB" id="9d8-3Y-Ibw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="CWa-rV-vAQ" id="IdA-U2-okG"/>
                         <segue destination="HH1-aZ-zKh" kind="show" identifier="Detail" id="h0j-X3-hmB"/>
@@ -240,7 +246,13 @@
                             <outlet property="delegate" destination="WEY-WY-s5a" id="W6m-av-LIn"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="09g-Lk-3Sj"/>
+                    <navigationItem key="navigationItem" id="09g-Lk-3Sj">
+                        <barButtonItem key="rightBarButtonItem" title="Reload" id="Uf3-PR-cMG">
+                            <connections>
+                                <action selector="reloadAction:" destination="WEY-WY-s5a" id="LAO-Jc-O2v"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="HH1-aZ-zKh" kind="show" identifier="Detail" id="FGt-by-hT4"/>
                     </connections>
