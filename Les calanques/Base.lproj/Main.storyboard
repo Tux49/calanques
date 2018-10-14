@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uPm-g1-Xc2">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -304,6 +304,92 @@
             </objects>
             <point key="canvasLocation" x="2495.1999999999998" y="216.34182908545728"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="aed-PL-56J">
+            <objects>
+                <viewController id="uPm-g1-Xc2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MO4-3T-dzW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sugiton" translatesAutoresizingMaskIntoConstraints="NO" id="Cah-AR-V0m">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJe-Tv-zS0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KFZ-qg-MBr">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uK4-Ye-2hE">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="mzl-al-o1v">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcT-Pg-eU6" customClass="BoutonArrondi" customModule="Les_calanques" customModuleProvider="target">
+                                <rect key="frame" x="20" y="597" width="335" height="50"/>
+                                <color key="backgroundColor" red="0.18823529411764706" green="0.66666666666666663" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cfd-bS-Rdp"/>
+                                </constraints>
+                                <state key="normal" title="Visitez les calanques">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="naA-28-f82"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sugiton" translatesAutoresizingMaskIntoConstraints="NO" id="TEo-pZ-l1Z" customClass="ImageRonde" customModule="Les_calanques" customModuleProvider="target">
+                                <rect key="frame" x="100" y="50" width="175" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="Wqi-sj-5ML"/>
+                                    <constraint firstAttribute="width" constant="175" id="qO7-Bg-Rj8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Un coin de paradis en plein coeur de la métropole Marseillaise" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CzT-hX-txc">
+                                <rect key="frame" x="20" y="245" width="335" height="332"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TEo-pZ-l1Z" firstAttribute="top" secondItem="dlO-Ba-z5M" secondAttribute="top" constant="30" id="0X0-Ky-gVW"/>
+                            <constraint firstItem="dlO-Ba-z5M" firstAttribute="bottom" secondItem="lcT-Pg-eU6" secondAttribute="bottom" constant="20" id="0r7-zm-IgW"/>
+                            <constraint firstItem="Cah-AR-V0m" firstAttribute="trailing" secondItem="dlO-Ba-z5M" secondAttribute="trailing" id="4Ch-7Z-kYu"/>
+                            <constraint firstItem="JJe-Tv-zS0" firstAttribute="top" secondItem="MO4-3T-dzW" secondAttribute="top" id="JHV-8O-9Nd"/>
+                            <constraint firstItem="dlO-Ba-z5M" firstAttribute="trailing" secondItem="lcT-Pg-eU6" secondAttribute="trailing" constant="20" id="N5n-d0-Hws"/>
+                            <constraint firstItem="CzT-hX-txc" firstAttribute="top" secondItem="TEo-pZ-l1Z" secondAttribute="bottom" constant="20" id="Qc1-E0-e8L"/>
+                            <constraint firstItem="Cah-AR-V0m" firstAttribute="bottom" secondItem="MO4-3T-dzW" secondAttribute="bottom" id="Xf6-qR-R6s"/>
+                            <constraint firstItem="JJe-Tv-zS0" firstAttribute="bottom" secondItem="MO4-3T-dzW" secondAttribute="bottom" id="Yek-xc-wJ5"/>
+                            <constraint firstItem="Cah-AR-V0m" firstAttribute="leading" secondItem="dlO-Ba-z5M" secondAttribute="leading" id="b0R-to-F4W"/>
+                            <constraint firstItem="CzT-hX-txc" firstAttribute="leading" secondItem="dlO-Ba-z5M" secondAttribute="leading" constant="20" id="fg5-oT-O5T"/>
+                            <constraint firstItem="TEo-pZ-l1Z" firstAttribute="centerX" secondItem="MO4-3T-dzW" secondAttribute="centerX" id="fqt-pn-bU4"/>
+                            <constraint firstItem="Cah-AR-V0m" firstAttribute="top" secondItem="MO4-3T-dzW" secondAttribute="top" id="kiL-w8-C3B"/>
+                            <constraint firstItem="lcT-Pg-eU6" firstAttribute="leading" secondItem="dlO-Ba-z5M" secondAttribute="leading" constant="20" id="ksd-3x-NGK"/>
+                            <constraint firstItem="dlO-Ba-z5M" firstAttribute="trailing" secondItem="CzT-hX-txc" secondAttribute="trailing" constant="20" id="n8X-U2-8U4"/>
+                            <constraint firstItem="JJe-Tv-zS0" firstAttribute="trailing" secondItem="dlO-Ba-z5M" secondAttribute="trailing" id="qCC-nE-jr1"/>
+                            <constraint firstItem="lcT-Pg-eU6" firstAttribute="top" secondItem="CzT-hX-txc" secondAttribute="bottom" constant="20" id="qn2-UX-vDK"/>
+                            <constraint firstItem="JJe-Tv-zS0" firstAttribute="leading" secondItem="dlO-Ba-z5M" secondAttribute="leading" id="vDs-u6-Bxa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dlO-Ba-z5M"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u5i-7y-bOw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-786.39999999999998" y="-0.44977511244377816"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -386,6 +472,7 @@
         <image name="earth" width="25.600000381469727" height="25.600000381469727"/>
         <image name="list" width="25.600000381469727" height="25.600000381469727"/>
         <image name="port pin" width="245.75999450683594" height="164.16000366210938"/>
+        <image name="sugiton" width="1600" height="896"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="FGt-by-hT4"/>
