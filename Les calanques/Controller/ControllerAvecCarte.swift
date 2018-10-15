@@ -13,10 +13,20 @@ class ControllerAvecCarte: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     
+    var calanques: [Calanque] = CalanqueCollection().all()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        addAnnotations()
+    }
+    
+    func addAnnotations() {
+        for calanque in calanques {
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = calanque.coordonnee
+            annotation.title = calanque.nom
+            mapView.addAnnotation(annotation)
+        }
     }
     
     @IBAction func getPosition(_ sender: Any) {
