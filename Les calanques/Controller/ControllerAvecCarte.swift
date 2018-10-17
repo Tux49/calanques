@@ -9,9 +9,12 @@
 import UIKit
 import MapKit
 
-class ControllerAvecCarte: UIViewController, MKMapViewDelegate {
+class ControllerAvecCarte: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
+    
+    var locationManager = CLLocationManager()
+    var userPosition: CLLocation?
     
     var calanques: [Calanque] = CalanqueCollection().all()
     
@@ -20,7 +23,14 @@ class ControllerAvecCarte: UIViewController, MKMapViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         mapView.delegate = self
+        mapView.showsUserLocation = true
+        
+        locationManager.delegate = self
+        locationManager.requestAlwaysAuthorization()
+        locationManager.startUpdatingLocation()
+        
         addAnnotations()
         
         NotificationCenter.default.addObserver(self,
@@ -38,6 +48,14 @@ class ControllerAvecCarte: UIViewController, MKMapViewDelegate {
         let span = MKCoordinateSpan(latitudeDelta: 0.35, longitudeDelta: 0.35)
         let region = MKCoordinateRegion(center: coordonnees, span: span)
         mapView.setRegion(region, animated: true)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if locations.count > 0 {
+            if let maPosition = locations.last {
+                userPosition = maPosition
+            }
+        }
     }
     
     @objc func notifDetail(notification: Notification) {
@@ -101,7 +119,9 @@ class ControllerAvecCarte: UIViewController, MKMapViewDelegate {
     }
     
     @IBAction func getPosition(_ sender: Any) {
-        
+        if userPosition != nil {
+            setupMap(coordonnees: userPosition!.coordinate)
+        }
     }
     
     @IBAction func segmentedChanged(_ sender: UISegmentedControl) {
