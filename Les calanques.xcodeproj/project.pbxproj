@@ -13,6 +13,7 @@
 		2C19516F21728A74006CF96C /* CalanqueCellAlternative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C19516E21728A74006CF96C /* CalanqueCellAlternative.swift */; };
 		2C1E9B4721724E27003EBB45 /* CalanqueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1E9B4621724E27003EBB45 /* CalanqueCell.swift */; };
 		2C1E9B4921725A85003EBB45 /* ImageRonde.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1E9B4821725A85003EBB45 /* ImageRonde.swift */; };
+		2C211F4021779558006341D4 /* MonAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C211F3F21779558006341D4 /* MonAnnotationView.swift */; };
 		2C8EE1C42171388D0049F0BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8EE1C32171388D0049F0BC /* AppDelegate.swift */; };
 		2C8EE1CB2171388D0049F0BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8EE1C92171388D0049F0BC /* Main.storyboard */; };
 		2C8EE1CD2171388E0049F0BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C8EE1CC2171388E0049F0BC /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		2C19516E21728A74006CF96C /* CalanqueCellAlternative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueCellAlternative.swift; sourceTree = "<group>"; };
 		2C1E9B4621724E27003EBB45 /* CalanqueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueCell.swift; sourceTree = "<group>"; };
 		2C1E9B4821725A85003EBB45 /* ImageRonde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRonde.swift; sourceTree = "<group>"; };
+		2C211F3F21779558006341D4 /* MonAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonAnnotationView.swift; sourceTree = "<group>"; };
 		2C8EE1C02171388D0049F0BC /* Les calanques.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Les calanques.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C8EE1C32171388D0049F0BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C8EE1CA2171388D0049F0BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				2C1E9B4821725A85003EBB45 /* ImageRonde.swift */,
 				2C19516E21728A74006CF96C /* CalanqueCellAlternative.swift */,
 				2CDC342F2173DE0600EAD1D1 /* BoutonArrondi.swift */,
+				2C211F3F21779558006341D4 /* MonAnnotationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			files = (
 				2C0854072171C311001A1149 /* TableViewIntegreeController.swift in Sources */,
 				2C8EE1C42171388D0049F0BC /* AppDelegate.swift in Sources */,
+				2C211F4021779558006341D4 /* MonAnnotationView.swift in Sources */,
 				2C1E9B4721724E27003EBB45 /* CalanqueCell.swift in Sources */,
 				2CA7730D2175EC1B0006DC2C /* MonAnnotation.swift in Sources */,
 				2C8EE1E0217146FA0049F0BC /* CalanqueCollection.swift in Sources */,
