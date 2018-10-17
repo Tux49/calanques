@@ -27,6 +27,17 @@ class ControllerAvecCarte: UIViewController, MKMapViewDelegate {
             selector: #selector(notifDetail),
             name: Notification.Name("detail"),
             object: nil)
+        
+        if calanques.count > 5 {
+            let premiere = calanques[5].coordonnee
+            setupMap(coordonnees: premiere)
+        }
+    }
+    
+    func setupMap(coordonnees: CLLocationCoordinate2D) {
+        let span = MKCoordinateSpan(latitudeDelta: 0.35, longitudeDelta: 0.35)
+        let region = MKCoordinateRegion(center: coordonnees, span: span)
+        mapView.setRegion(region, animated: true)
     }
     
     @objc func notifDetail(notification: Notification) {
