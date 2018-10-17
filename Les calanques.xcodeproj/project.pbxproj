@@ -19,6 +19,7 @@
 		2C8EE1D02171388E0049F0BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8EE1CE2171388E0049F0BC /* LaunchScreen.storyboard */; };
 		2C8EE1DE2171415A0049F0BC /* Calanque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8EE1DD2171415A0049F0BC /* Calanque.swift */; };
 		2C8EE1E0217146FA0049F0BC /* CalanqueCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8EE1DF217146FA0049F0BC /* CalanqueCollection.swift */; };
+		2CA7730D2175EC1B0006DC2C /* MonAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA7730C2175EC1B0006DC2C /* MonAnnotation.swift */; };
 		2CDC342E2173A69100EAD1D1 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDC342D2173A69100EAD1D1 /* DetailController.swift */; };
 		2CDC34302173DE0600EAD1D1 /* BoutonArrondi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDC342F2173DE0600EAD1D1 /* BoutonArrondi.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		2C8EE1D12171388E0049F0BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C8EE1DD2171415A0049F0BC /* Calanque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calanque.swift; sourceTree = "<group>"; };
 		2C8EE1DF217146FA0049F0BC /* CalanqueCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueCollection.swift; sourceTree = "<group>"; };
+		2CA7730C2175EC1B0006DC2C /* MonAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonAnnotation.swift; sourceTree = "<group>"; };
 		2CDC342D2173A69100EAD1D1 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		2CDC342F2173DE0600EAD1D1 /* BoutonArrondi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutonArrondi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +91,7 @@
 			children = (
 				2C8EE1DD2171415A0049F0BC /* Calanque.swift */,
 				2C8EE1DF217146FA0049F0BC /* CalanqueCollection.swift */,
+				2CA7730C2175EC1B0006DC2C /* MonAnnotation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				2C0854072171C311001A1149 /* TableViewIntegreeController.swift in Sources */,
 				2C8EE1C42171388D0049F0BC /* AppDelegate.swift in Sources */,
 				2C1E9B4721724E27003EBB45 /* CalanqueCell.swift in Sources */,
+				2CA7730D2175EC1B0006DC2C /* MonAnnotation.swift in Sources */,
 				2C8EE1E0217146FA0049F0BC /* CalanqueCollection.swift in Sources */,
 				2CDC34302173DE0600EAD1D1 /* BoutonArrondi.swift in Sources */,
 				2C8EE1DE2171415A0049F0BC /* Calanque.swift in Sources */,
