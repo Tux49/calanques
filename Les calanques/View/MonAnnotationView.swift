@@ -63,10 +63,11 @@ class MonAnnotationView: MKAnnotationView {
     }
     
     @objc func distance() {
-        
     }
 
     @objc func detail() {
+        guard let anno = annotation as? MonAnnotation else { return }
         
+        NotificationCenter.default.post(name: Notification.Name("detail"), object: anno.calanque)
     }
 }

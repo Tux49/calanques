@@ -16,11 +16,35 @@ class ControllerAvecCarte: UIViewController, MKMapViewDelegate {
     var calanques: [Calanque] = CalanqueCollection().all()
     
     let reuseIdentifier = "reuseID"
+    let segueDetailId = "Detail"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
         addAnnotations()
+        
+        NotificationCenter.default.addObserver(self,
+            selector: #selector(notifDetail),
+            name: Notification.Name("detail"),
+            object: nil)
+    }
+    
+    @objc func notifDetail(notification: Notification) {
+        if let calanque = notification.object as? Calanque {
+            toDetail(calanque: calanque)
+        }
+    }
+    
+    func toDetail(calanque: Calanque) {
+        performSegue(withIdentifier: segueDetailId, sender: calanque)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == segueDetailId {
+            if let controller = segue.destination as? DetailController {
+                controller.calanqueRecue = sender as? Calanque
+            }
+        }
     }
     
     func addAnnotations() {
